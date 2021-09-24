@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Menu Assignment</title>
+<style>
+
+/* all h2 elements */
+h1 {
+  color: #404040;
+  text-align: center;
+}
+/* all with class="highlight" */
+/*let's use absolute positioning for the tablet size*/
+/*Let's use relative positioning for the computer and phone size*/
+
+p {
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.highlight {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: green;
+  opacity: .6;
+}
+
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.left {
+  float: left;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.center {
+  float: center;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+#p1 {
+  /*background-color: #A52A2A;*/
+  width: 300px;
+  height: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+#p2 {
+  /*background-color: #DEB887;*/
+  width: 50px;
+  height: 50px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+#p3 {
+  /*background-color: #92da8f;*/
+  width: 50px;
+  height: 50px;  
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+
+/********** Desktop dimensions **********/
+@media (min-width: 992px) {
+  #p1 {
+    width: 80%;
+    float: left;
+    text-align: left;
+    
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+    float: right;
+    text-align: left;
+  }
+  #p3 {
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    text-align: left;
+  }
+}
+
+
+
+/********** Tablet dimensions **********/
+@media (min-width: 768px) and (max-width: 991px){
+  #p1 {
+    width: 30%;
+    float: left;
+    text-align: left;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+    float: right;
+    text-align: left;
+  }
+  #p3 {
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    text-align: left;
+  }
+}
+
+
+/********** mobile dimensions **********/
+@media (max-width: 767px){
+  #p1 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+  }
+  #p3 {
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+
+
+
+/* element with id="mainPoint" */
+#mainPoint {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: red;
+  opacity: .7;
+}
+
+/* all p AND h1 elements */
+p, h1 {
+  color: blue;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Our Menu</h1>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+<p id="p2">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p id="p3">Cool beans are the best </p>
+
+</body>
+</html>
