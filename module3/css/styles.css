@@ -96,6 +96,14 @@ section {
   margin-top: 10px;
 }
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #a9aaf0;
+}
+.navbar-collapse {
+  border-top: 0;
+}
+
 .navbar-brand {
   font-size: 2em;
   border: 0 0 10px 10px;
